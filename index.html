@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Tabela - Supabase</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Script do Supabase via CDN -->
+    <script src="https://jsdelivr.net"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>📚 Gerenciador de Livros</h1>
+
+        <!-- Formulário para adicionar livro -->
+        <form id="livro-form">
+            <input type="text" id="nome_livro" placeholder="Nome do Livro" required>
+            <input type="date" id="data" required>
+            <button type="submit">Adicionar</button>
+        </form>
+
+        <!-- Tabela de exibição -->
+        <table id="livros-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome do Livro</th>
+                    <th>Data</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="livros-lista">
+                <!-- Os dados do Supabase vão entrar aqui -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
